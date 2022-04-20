@@ -67,12 +67,12 @@ We can see train dataset is imbalanced and
 - *train vs validation curves are smoother and not highly fluctuating like earlier models*
 <br/><br/>
 
-| Model                                | epochs | Train/ Validation Accuracy | Train/validation Loss | Comments                                                                         |
-| ------------------------------------ | ------ | -------------------------- | --------------------- | -------------------------------------------------------------------------------- |
-| Initial Model                        | 20     | 82/51                      | 0.46/2.15             | Model is overfitting                                                             |
-| Model with Data Augmentation         | 20     | 58/54                      | 1.13/1.33             | Accuracy is low, overfitting is controlled                                       |
-| Model with Dropout                   | 20     | 56/52                      | 1.22/1.44             | no overfitting, but plot curves are not smooth and fluctuating and less accuracy |
-| Model with Class rebalance + Dropout | 50     | 84/80                      | 0.4/0.8               | accuracy improved, no overfitting and curves are smoother                        |
+| Model                                | epochs | Comments                                                                         |
+| ------------------------------------ | ------ | -------------------------------------------------------------------------------- |
+| Initial Model                        | 20     | Model is overfitting                                                             |
+| Model with Data Augmentation         | 20     | Accuracy is low, overfitting is controlled                                       |
+| Model with Dropout                   | 20     | no overfitting, but plot curves are not smooth and fluctuating and less accuracy |
+| Model with Class rebalance + Dropout | 50     | accuracy improved, no overfitting and curves are smoother                        |
 
 
 ## Tech Stack
